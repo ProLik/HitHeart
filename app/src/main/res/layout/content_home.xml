@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/statusBarView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/titleBG"
+        >
+        <com.prolik.android.hitheart.view.BaseImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/title_user_icon"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/title_icon"
+            android:gravity="center"
+            android:text="Hit Heart"
+            android:textColor="#fff"/>
+        <com.prolik.android.hitheart.view.PressedRelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true">
+            <com.prolik.android.hitheart.view.BaseImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_scan"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/title_scan_icon"
+                android:textColor="#ffffff"
+                android:textSize="30sp"/>
+        </com.prolik.android.hitheart.view.PressedRelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/content_home_center"></include>
+        <include layout="@layout/content_home_playbar"></include>
+    </RelativeLayout>
+</LinearLayout>

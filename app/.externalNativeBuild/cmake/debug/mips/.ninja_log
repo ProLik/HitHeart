@@ -1,0 +1,5 @@
+# ninja log v5
+0	417	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ab2e60f075f848c2
+418	748	0	../../../../build/intermediates/cmake/debug/obj/mips/libnative-lib.so	bd72d1040691a036
+3	384	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ab2e60f075f848c2
+384	696	0	../../../../build/intermediates/cmake/debug/obj/mips/libnative-lib.so	bd72d1040691a036
