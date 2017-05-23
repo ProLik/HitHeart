@@ -45,7 +45,7 @@ public class SplashActivity extends BaseActivity {
     private void goHome() {
         Intent intent = new Intent(this, HomeActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
+        startActivity(intent);
         //添加页面切换效果
         if(Build.VERSION.SDK_INT >= 5){
             overridePendingTransition(0,0);
