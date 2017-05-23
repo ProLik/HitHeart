@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">乐乐音乐4</string>
+    <string name="app_name">慧心音乐</string>
     <string name="exit_tip">再按一次退出程序</string>
     <string name="def_artist">传播好音乐</string>
-    <string name="def_songName">乐乐音乐</string>
+    <string name="def_songName">慧心音乐</string>
 
     <!-- 图标图片 -->
     <string name="title_user_icon">&#xe621;</string>
