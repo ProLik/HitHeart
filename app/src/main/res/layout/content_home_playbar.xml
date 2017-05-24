@@ -1,6 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:clickable="true"
+    android:id="@+id/palyBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.prolik.android.hitheart.view.BaseImageView
+            android:id="@+id/play_bar_def_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/def_artist_icon"
+            android:textColor="@color/def_bar_title_color"
+            android:textSize="40dp"/>
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/play_bar_def_artist"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/play_bar_def_artist"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="@string/def_songName"
+            android:textColor="@color/def_bar_title_color"
+            android:textSize="15dp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/artistName"
+            android:layout_below="@id/songName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/play_bar_def_artist"
+            android:ellipsize="marquee"
+            android:text="@string/def_artist"
+            android:textColor="@color/def_bar_title_color"
+            android:textSize="12dp" />
+        <!--上一首-->
+        <com.prolik.android.hitheart.view.PressedRelativeLayout
+            android:id="@+id/preParent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/pauseParent"
+            android:clickable="true">
+            <com.prolik.android.hitheart.view.BaseImageView
+                android:id="@+id/preButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/bar_pre_icon"
+                android:textColor="@color/def_bar_title_color"
+                android:textSize="@dimen/player_bv_size" />
+        </com.prolik.android.hitheart.view.PressedRelativeLayout>
+        <!--暂停-->
+        <com.prolik.android.hitheart.view.PressedRelativeLayout
+            android:id="@+id/pauseParent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/nextParent"
+            android:clickable="true">
+            <com.prolik.android.hitheart.view.BaseImageView
+                android:id="@+id/pauseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/bar_pause_icon"
+                android:textColor="@color/def_bar_title_color"
+                android:textSize="@dimen/player_bv_size" />
+        </com.prolik.android.hitheart.view.PressedRelativeLayout>
+        <!--播放-->
+        <com.prolik.android.hitheart.view.PressedRelativeLayout
+            android:id="@+id/playParent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/nextParent"
+            android:clickable="true"
+            android:visibility="invisible">
+
+            <com.prolik.android.hitheart.view.BaseImageView
+                android:id="@+id/playButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/bar_play_icon"
+                android:textColor="@color/def_bar_title_color"
+                android:textSize="@dimen/player_bv_size" />
+        </com.prolik.android.hitheart.view.PressedRelativeLayout>
+        
+        <!--下一首-->
+        <com.prolik.android.hitheart.view.PressedRelativeLayout
+            android:id="@+id/nextParent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            >
+            <com.prolik.android.hitheart.view.BaseImageView
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dp"
+                android:text="@string/bar_next_icon"
+                android:textColor="@color/def_bar_title_color"
+                android:textSize="@dimen/player_bv_size" />
+        </com.prolik.android.hitheart.view.PressedRelativeLayout>
+    </RelativeLayout>
 
 </LinearLayout>

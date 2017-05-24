@@ -33,6 +33,7 @@
             android:text="Hit Heart"
             android:textColor="#fff"/>
         <com.prolik.android.hitheart.view.PressedRelativeLayout
+            android:id="@+id/scanButton"
             android:layout_width="200dp"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"

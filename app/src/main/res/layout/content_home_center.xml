@@ -9,16 +9,20 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/localPlayListview"
+                android:scrollbars="vertical"></ListView>
         </RelativeLayout>
         <TextView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
             android:layout_gravity="center"
             android:background="@mipmap/bg_tip"
             android:gravity="center"
             android:textColor="#fff"
-            android:textSize="30sp"
+            android:textSize="30dip"
             android:visibility="invisible"/>
     </FrameLayout>
 
