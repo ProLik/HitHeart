@@ -3,8 +3,11 @@ package com.prolik.android.hitheart.activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.KeyEvent;
 
+import com.prolik.android.hitheart.MainActivity;
 import com.prolik.android.hitheart.R;
 import com.prolik.android.hitheart.tool.DataUtil;
 

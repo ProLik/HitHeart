@@ -4,7 +4,7 @@
     android:layout_height="50dp"
     android:layout_alignParentBottom="true"
     android:clickable="true"
-    android:id="@+id/palyBar">
+    android:id="@+id/playBar">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/play_bar_def_artist"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/play_bar_def_artist"
             android:ellipsize="marquee"
             android:focusable="true"
@@ -49,8 +49,8 @@
         <!--上一首-->
         <com.prolik.android.hitheart.view.PressedRelativeLayout
             android:id="@+id/preParent"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/player_buttonbg_width"
+            android:layout_height="@dimen/player_buttonbg_width"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/pauseParent"
             android:clickable="true">
@@ -68,8 +68,8 @@
         <!--暂停-->
         <com.prolik.android.hitheart.view.PressedRelativeLayout
             android:id="@+id/pauseParent"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/player_buttonbg_width"
+            android:layout_height="@dimen/player_buttonbg_width"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/nextParent"
             android:clickable="true">
@@ -87,8 +87,8 @@
         <!--播放-->
         <com.prolik.android.hitheart.view.PressedRelativeLayout
             android:id="@+id/playParent"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/player_buttonbg_width"
+            android:layout_height="@dimen/player_buttonbg_width"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/nextParent"
             android:clickable="true"
@@ -109,8 +109,8 @@
         <!--下一首-->
         <com.prolik.android.hitheart.view.PressedRelativeLayout
             android:id="@+id/nextParent"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/player_buttonbg_width"
+            android:layout_height="@dimen/player_buttonbg_width"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:clickable="true"
