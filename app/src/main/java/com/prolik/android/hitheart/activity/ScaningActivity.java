@@ -9,7 +9,11 @@ import android.widget.TextView;
 
 import com.prolik.android.hitheart.R;
 import com.prolik.android.hitheart.manage.ActivityManager;
+import com.prolik.android.hitheart.model.StorageInfo;
+import com.prolik.android.hitheart.tool.StorageListUtil;
 import com.prolik.android.hitheart.view.BaseColorImageButton;
+
+import java.util.List;
 
 
 public class ScaningActivity extends BaseActivity {
@@ -138,6 +142,19 @@ public class ScaningActivity extends BaseActivity {
      */
     private void scannerMusic() {
         songSize = 0;
-        List
+        List<StorageInfo> list = StorageListUtil.listAvaliableStorage(getApplicationContext());
+        for (int i = 0; i < list.size(); i++) {
+            StorageInfo storageInfo = list.get(i);
+            scannerLocalAudioFile(storageInfo.path, true);
+        }
     }
+    /**
+     * @param path        搜索目录
+     * @param b 是否进入子文件夹
+     */
+    private void scannerLocalAudioFile(String path, boolean b) {
+
+    }
+
+
 }
